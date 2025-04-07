@@ -1,0 +1,43 @@
+[project]
+name = "faiss-index-sample"
+version = "0.1.0"
+description = ""
+authors = ["kiriko_rs <kiriko_rs@icloud.com>"]
+license = "MIT"
+readme = "README.md"
+
+requires-python = ">=3.12"
+
+dependencies = [
+    "beautifulsoup4>=4.13.3",
+    "faiss-cpu>=1.10.0",
+    "fastapi>=0.115.11",
+    "gitpython>=3.1.44",
+    "httpx>=0.28.1",
+    "langchain>=0.3.21",
+    "langchain-community>=0.3.20",
+    "langgraph>=0.3.18",
+    "pandas>=2.2.3",
+    "pydantic>=2.10.6",
+    "pydantic-settings>=2.8.1",
+    "python-dotenv>=1.0.1",
+    "ruff>=0.11.2",
+    "torch>=2.6.0",
+    "transformers>=4.50.0",
+    "uvicorn>=0.34.0",
+]
+
+[project.optional-dependencies]
+dev = [
+  "pytest>=7.2.0"
+]
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+src = ["."]
+extend-select = ["F"]
+ignore = ["F401", "F403", "F405"]
+
+[tool.ruff.lint]
+select = ["ALL"]

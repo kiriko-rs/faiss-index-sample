@@ -1,0 +1,6 @@
+sites:
+  - name: "LangChain API Reference"
+    root_url: "https://python.langchain.com/api_reference/reference.html"
+    max_depth: 3
+    pattern: "^https://python\\.langchain\\.com/api_reference/.*\\.html$"
+    excluded_extensions: ".png,.jpg,.jpeg,.gif,.svg,.pdf,.zip,.mp4,.ico"
